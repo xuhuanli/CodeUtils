@@ -1,11 +1,12 @@
 package com.xuhuanli.androidutils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.Toast;
 
 public class ToastUtils {
 
-    //Toast
+    //Toast 开关
     public static boolean isShow = true;
     private static Toast toast;
 
@@ -15,11 +16,12 @@ public class ToastUtils {
     }
 
     /**
-     * 短时间显示Toast
+     * Show short.
      *
-     * @param context
-     * @param message
+     * @param context the context
+     * @param message the message
      */
+    @SuppressLint("ShowToast")
     public static void showShort(Context context, CharSequence message) {
         if (isShow) {
             if (toast == null) {
@@ -34,11 +36,12 @@ public class ToastUtils {
     }
 
     /**
-     * 短时间显示Toast
+     * Show short.
      *
-     * @param context
-     * @param resId
+     * @param context the context
+     * @param resId   the res id
      */
+    @SuppressLint("ShowToast")
     public static void showShort(Context context, int resId) {
         if (isShow) {
             if (toast == null) {
@@ -53,11 +56,12 @@ public class ToastUtils {
     }
 
     /**
-     * 长时间显示Toast
+     * Show long.
      *
-     * @param context
-     * @param message
+     * @param context the context
+     * @param message the message
      */
+    @SuppressLint("ShowToast")
     public static void showLong(Context context, CharSequence message) {
         if (isShow) {
             if (toast == null) {
@@ -72,11 +76,12 @@ public class ToastUtils {
     }
 
     /**
-     * 长时间显示Toast
+     * Show long.
      *
-     * @param context
-     * @param resId
+     * @param context the context
+     * @param resId   the res id
      */
+    @SuppressLint("ShowToast")
     public static void showLong(Context context, int resId) {
         if (isShow) {
             if (toast == null) {

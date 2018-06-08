@@ -1,4 +1,4 @@
-package com.ehooworld.androidutils;
+package com.xuhuanli.androidutils;
 
 import org.junit.Test;
 
