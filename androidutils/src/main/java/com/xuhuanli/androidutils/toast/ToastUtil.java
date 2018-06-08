@@ -1,4 +1,4 @@
-package com.xuhuanli.androidutils;
+package com.xuhuanli.androidutils.toast;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
