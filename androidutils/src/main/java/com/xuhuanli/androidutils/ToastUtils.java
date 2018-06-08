@@ -1,16 +1,11 @@
-﻿package com.xuhuanli.androidutils;
+package com.xuhuanli.androidutils;
 
 import android.content.Context;
 import android.widget.Toast;
 
-/**
- * Toast统一管理类
- */
 public class ToastUtils {
 
-    /**
-     * Toast开关 isShow = true表示需要显示Toast defualt = true
-     */
+    //Toast
     public static boolean isShow = true;
     private static Toast toast;
 
