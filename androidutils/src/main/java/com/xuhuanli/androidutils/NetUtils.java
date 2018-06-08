@@ -1,4 +1,4 @@
-package com.ehooworld.androidutils;
+package com.xuhuanli.androidutils;
 
 import android.app.Activity;
 import android.content.ComponentName;

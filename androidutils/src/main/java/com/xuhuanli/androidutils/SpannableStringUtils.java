@@ -1,4 +1,4 @@
-package com.ehooworld.androidutils;
+package com.xuhuanli.androidutils;
 
 import android.graphics.Bitmap;
 import android.graphics.BlurMaskFilter;
