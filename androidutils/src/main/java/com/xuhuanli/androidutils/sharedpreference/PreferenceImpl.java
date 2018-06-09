@@ -11,6 +11,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * The type Preference.
+ */
 public class PreferenceImpl implements IPreference {
 
     private static IPreference iPreference;
@@ -28,7 +31,7 @@ public class PreferenceImpl implements IPreference {
      * 获取IPreference对象
      *
      * @param context the context
-     * @return preference
+     * @return preference preference
      */
     public static IPreference getPreference(Context context) {
         synchronized (lock) {
@@ -44,7 +47,7 @@ public class PreferenceImpl implements IPreference {
      *
      * @param context  the context
      * @param fileName the file name
-     * @return preference
+     * @return preference preference
      */
     public static IPreference getPreference(Context context, String fileName) {
         synchronized (lock) {

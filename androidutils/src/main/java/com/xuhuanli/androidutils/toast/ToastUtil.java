@@ -4,15 +4,21 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.Toast;
 
+/**
+ * The type Toast util.
+ */
 public class ToastUtil {
 
-    //Toast 开关
+    /**
+     * The constant isShow.
+     */
+//Toast 开关
     public static boolean isShow = true;
     private static Toast toast;
 
     private ToastUtil() {
         /* cannot be instantiated */
-        throw new UnsupportedOperationException("don't reflection");
+        throw new UnsupportedOperationException("Do not reflect acquisition");
     }
 
     /**
