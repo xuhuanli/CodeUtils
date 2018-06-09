@@ -23,3 +23,23 @@ AppUtil.getAppName(context)
 AppUtil.getAppVersionName(context)
 
 AppUtil.getAppVersionCode(context)
+
+##DensityUtil
+
+sp/dp px之间的转换工具 静态调用
+
+##KeyboardUtil
+
+displayIme(View view) //传入EditText
+
+##MD5Util 
+
+public static String encode(@NonNull String str, @Nullable String salt)
+
+##Log
+
+在Dev阶段推荐使用logger [https://github.com/orhanobut/logger](https://github.com/orhanobut/logger)
+
+##ScreenUtil
+
+获取屏幕的宽/高/状态栏高度/截屏

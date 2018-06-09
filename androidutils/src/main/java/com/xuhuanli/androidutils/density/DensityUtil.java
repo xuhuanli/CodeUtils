@@ -1,4 +1,4 @@
-package com.xuhuanli.androidutils.Density;
+package com.xuhuanli.androidutils.density;
 
 import android.content.Context;
 import android.util.TypedValue;

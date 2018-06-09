@@ -12,7 +12,6 @@ public class ToastUtil {
     /**
      * The constant isShow.
      */
-//Toast 开关
     public static boolean isShow = true;
     private static Toast toast;
 

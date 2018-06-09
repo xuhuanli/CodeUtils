@@ -109,7 +109,7 @@ public interface IPreference {
      * 取出一个List集合
      *
      * @param key the key
-     * @return all
+     * @return all all
      */
     List<String> getAll(String key);
 
@@ -141,7 +141,7 @@ public interface IPreference {
      * 是否存在key
      *
      * @param key the key
-     * @return boolean
+     * @return boolean boolean
      */
     boolean contains(String key);
 
@@ -154,7 +154,7 @@ public interface IPreference {
      * 获取String类型的数据
      *
      * @param key the key
-     * @return string
+     * @return string string
      */
     String getString(String key);
 
@@ -162,7 +162,7 @@ public interface IPreference {
      * 获取Float类型的数据
      *
      * @param key the key
-     * @return float
+     * @return float float
      */
     float getFloat(String key);
 
@@ -170,7 +170,7 @@ public interface IPreference {
      * 获取int类型的数据
      *
      * @param key the key
-     * @return integer
+     * @return integer integer
      */
     int getInteger(String key);
 
@@ -178,7 +178,7 @@ public interface IPreference {
      * 获取long类型的数据
      *
      * @param key the key
-     * @return long
+     * @return long long
      */
     long getLong(String key);
 
@@ -186,7 +186,7 @@ public interface IPreference {
      * 获取Set类型的数据
      *
      * @param key the key
-     * @return set
+     * @return set set
      */
     Set<String> getSet(String key);
 
@@ -194,7 +194,7 @@ public interface IPreference {
      * 获取boolean类型的数据
      *
      * @param key the key
-     * @return boolean
+     * @return boolean boolean
      */
     boolean getBoolean(String key);
 
