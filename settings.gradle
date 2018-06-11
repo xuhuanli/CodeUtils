@@ -1,1 +1,1 @@
-include ':androidutils', ':sample'
+include ':androidutils', ':sample', ':architecture'

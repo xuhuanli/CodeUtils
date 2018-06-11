@@ -1,11 +1,12 @@
-apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'//添加
+apply plugin: 'com.android.application'
+
 android {
     compileSdkVersion 27
 
 
 
     defaultConfig {
+        applicationId "com.xuhuanli.architecture"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
@@ -28,18 +29,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
-
-publish {
-    userOrg = 'xuhuanli2017'//bintray.com用户名
-    repoName = 'maven'
-    groupId = 'com.xuhuanli.utils'//jcenter上的路径
-    artifactId = 'code-utils'//项目名称 最终 com.xuhuanli.code-utils:1.0.0
-    publishVersion = '1.0.5'//版本号
-    desc = 'Android code utils'//描述
-    website = 'https://github.com/xuhuanli/CodeUtils'//网站
-    autoPublish = true  //此布尔值定义上传时是否自动发布包。 如果配置为“假”，该包仍将被上传到bintray，但您必须手动发布。 默认值为“true”。
 }
