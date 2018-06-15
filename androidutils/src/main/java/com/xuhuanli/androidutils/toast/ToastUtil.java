@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.Toast;
 
+import java.lang.ref.WeakReference;
+
 /**
  * The type Toast util.
  */
@@ -13,7 +15,7 @@ public class ToastUtil {
      * The constant isShow.
      */
     public static boolean isShow = true;
-    private static Toast toast;
+    private static Toast mToast;
 
     private ToastUtil() {
         /* cannot be instantiated */
@@ -29,14 +31,15 @@ public class ToastUtil {
     @SuppressLint("ShowToast")
     public static void showShort(Context context, CharSequence message) {
         if (isShow) {
-            if (toast == null) {
-                toast = Toast.makeText(context.getApplicationContext(),
+            if (mToast == null) {
+                WeakReference<Context> weakReference = new WeakReference<>(context);
+                mToast = Toast.makeText(weakReference.get(),
                         message,
                         Toast.LENGTH_SHORT);
             } else {
-                toast.setText(message);
+                mToast.setText(message);
             }
-            toast.show();
+            mToast.show();
         }
     }
 
@@ -49,14 +52,15 @@ public class ToastUtil {
     @SuppressLint("ShowToast")
     public static void showShort(Context context, int resId) {
         if (isShow) {
-            if (toast == null) {
-                toast = Toast.makeText(context.getApplicationContext(),
+            if (mToast == null) {
+                WeakReference<Context> weakReference = new WeakReference<>(context);
+                mToast = Toast.makeText(weakReference.get(),
                         resId,
                         Toast.LENGTH_SHORT);
             } else {
-                toast.setText(resId);
+                mToast.setText(resId);
             }
-            toast.show();
+            mToast.show();
         }
     }
 
@@ -69,14 +73,15 @@ public class ToastUtil {
     @SuppressLint("ShowToast")
     public static void showLong(Context context, CharSequence message) {
         if (isShow) {
-            if (toast == null) {
-                toast = Toast.makeText(context.getApplicationContext(),
+            if (mToast == null) {
+                WeakReference<Context> weakReference = new WeakReference<>(context);
+                mToast = Toast.makeText(weakReference.get(),
                         message,
                         Toast.LENGTH_LONG);
             } else {
-                toast.setText(message);
+                mToast.setText(message);
             }
-            toast.show();
+            mToast.show();
         }
     }
 
@@ -89,14 +94,15 @@ public class ToastUtil {
     @SuppressLint("ShowToast")
     public static void showLong(Context context, int resId) {
         if (isShow) {
-            if (toast == null) {
-                toast = Toast.makeText(context.getApplicationContext(),
+            if (mToast == null) {
+                WeakReference<Context> weakReference = new WeakReference<>(context);
+                mToast = Toast.makeText(weakReference.get(),
                         resId,
                         Toast.LENGTH_LONG);
             } else {
-                toast.setText(resId);
+                mToast.setText(resId);
             }
-            toast.show();
+            mToast.show();
         }
     }
 }

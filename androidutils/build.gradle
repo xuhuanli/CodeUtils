@@ -38,7 +38,7 @@ publish {
     repoName = 'maven'
     groupId = 'com.xuhuanli.utils'//jcenter上的路径
     artifactId = 'code-utils'//项目名称 最终 com.xuhuanli.code-utils:1.0.0
-    publishVersion = '1.0.5'//版本号
+    publishVersion = '1.0.6'//版本号
     desc = 'Android code utils'//描述
     website = 'https://github.com/xuhuanli/CodeUtils'//网站
     autoPublish = true  //此布尔值定义上传时是否自动发布包。 如果配置为“假”，该包仍将被上传到bintray，但您必须手动发布。 默认值为“true”。

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.xuhuanli.androidutils.appinfo.AppUtil;
 import com.xuhuanli.androidutils.keyboard.KeyBoardUtil;
 import com.xuhuanli.androidutils.sharedpreference.IPreference;
+import com.xuhuanli.androidutils.toast.ToastUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        ToastUtil.showShort(this,"Hello");
         mSp = IPreference.prefHolder.getPreference(this);
         mSp.put("key", "value");
         JsonTest jsonTest = new JsonTest();
